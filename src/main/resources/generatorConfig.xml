@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+<classPathEntry location="E:\.m2\repository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar" /> 
+  <context id="xplat-bd" defaultModelType="flat" >
+    	<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/boot_member"
+			userId="root" password="root" />
+			
+		<javaModelGenerator targetPackage="com.ouyeel.domain.standingBook" targetProject="ouyeel-api-standingBook" /><!-- 实体类 --> 
+		<sqlMapGenerator targetPackage="com.ouyeel.mapper.standingBook" targetProject="ouyeel-service-standingBook/src/main/java" /> <!-- xml -->
+		<javaClientGenerator targetPackage="com.ouyeel.mapper.standingBook" targetProject="ouyeel-service-standingBook/src/main/java" type="XMLMAPPER" /> <!-- mapper --> 
+		<table tableName="oy_standing_book" domainObjectName="StandingBook"
+		    enableCountByExample="false" 
+		    enableSelectByExample="false" 
+		    enableUpdateByExample="false" 
+		    enableDeleteByExample="false">
+		</table>
+		
+		<!-- <table tableName="oy_standing_book_cost" domainObjectName="StandingBookCost"
+		    enableCountByExample="false" 
+		    enableSelectByExample="false" 
+		    enableUpdateByExample="false" 
+		    enableDeleteByExample="false">
+		</table> -->
+		 
+		<!-- <table tableName="oy_standing_book_contract" domainObjectName="StandingBookContract"
+		    enableCountByExample="false" 
+		    enableSelectByExample="false" 
+		    enableUpdateByExample="false" 
+		    enableDeleteByExample="false">
+		</table>
+		<table tableName="oy_standing_book_user" domainObjectName="StandingBookUser"
+		    enableCountByExample="false" 
+		    enableSelectByExample="false" 
+		    enableUpdateByExample="false" 
+		    enableDeleteByExample="false">
+		</table>
+		
+		<table tableName="oy_letter_credit" domainObjectName="LetterCredit"
+		    enableCountByExample="false" 
+		    enableSelectByExample="false" 
+		    enableUpdateByExample="false" 
+		    enableDeleteByExample="false">
+		</table>
+		<table tableName="oy_invoice_info" domainObjectName="InvoiceInfo"
+		    enableCountByExample="false" 
+		    enableSelectByExample="false" 
+		    enableUpdateByExample="false" 
+		    enableDeleteByExample="false">
+		</table>
+		<table tableName="oy_payment_info" domainObjectName="PaymentInfo"
+		    enableCountByExample="false" 
+		    enableSelectByExample="false" 
+		    enableUpdateByExample="false" 
+		    enableDeleteByExample="false">
+		</table>
+		<table tableName="oy_shipping_info" domainObjectName="ShippingInfo"
+		    enableCountByExample="false" 
+		    enableSelectByExample="false" 
+		    enableUpdateByExample="false" 
+		    enableDeleteByExample="false">
+		</table>
+		<table tableName="oy_standing_book_flowing" domainObjectName="standingBookFlowing"
+		    enableCountByExample="false" 
+		    enableSelectByExample="false" 
+		    enableUpdateByExample="false" 
+		    enableDeleteByExample="false">
+		</table>
+		<table tableName="oy_standing_book_cost_setting" domainObjectName="standingBookCostSetting"
+		    enableCountByExample="false" 
+		    enableSelectByExample="false" 
+		    enableUpdateByExample="false" 
+		    enableDeleteByExample="false">
+		</table> -->
+  </context>
+</generatorConfiguration>

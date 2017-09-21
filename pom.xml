@@ -1,12 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>hehe</groupId>
-  <artifactId>com.boot</artifactId>
-  <packaging>ejb</packaging>
+  <artifactId>boot-api-user</artifactId>
+  <packaging>jar</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>com.boot Maven Webapp</name>
-  <url>http://maven.apache.org</url>
+  <name>boot-api-user</name>
+  <description>boot api user project</description>
   <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -39,6 +38,22 @@
        </dependency>  
   </dependencies>
   <build>
-    <finalName>com.boot</finalName>
+    <plugins>
+			<plugin>
+				<groupId>org.mybatis.generator</groupId>
+				<artifactId>mybatis-generator-maven-plugin</artifactId>
+				<version>1.3.0</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.mybatis.generator</groupId>
+						<artifactId>mybatis-generator-core</artifactId>
+						<version>1.3.2</version>
+					</dependency>
+				</dependencies>
+				<configuration>
+					<overwrite>true</overwrite>
+				</configuration>
+			</plugin>
+		</plugins>
   </build>
 </project>
