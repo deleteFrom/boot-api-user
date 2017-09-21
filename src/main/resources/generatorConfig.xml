@@ -6,10 +6,10 @@
     	<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/boot_member"
 			userId="root" password="root" />
 			
-		<javaModelGenerator targetPackage="com.ouyeel.domain.standingBook" targetProject="ouyeel-api-standingBook" /><!-- 实体类 --> 
-		<sqlMapGenerator targetPackage="com.ouyeel.mapper.standingBook" targetProject="ouyeel-service-standingBook/src/main/java" /> <!-- xml -->
-		<javaClientGenerator targetPackage="com.ouyeel.mapper.standingBook" targetProject="ouyeel-service-standingBook/src/main/java" type="XMLMAPPER" /> <!-- mapper --> 
-		<table tableName="oy_standing_book" domainObjectName="StandingBook"
+		<javaModelGenerator targetPackage="com.boot.domain.user" targetProject="boot-api-user" /><!-- 实体类 --> 
+		<sqlMapGenerator targetPackage="com.boot.mapper.user" targetProject="boot-service-user/src/main/java" /> <!-- xml -->
+		<javaClientGenerator targetPackage="com.boot.mapper.user" targetProject="boot-service-user/src/main/java" type="XMLMAPPER" /> <!-- mapper --> 
+		<table tableName="boot_user" domainObjectName="BootUser"
 		    enableCountByExample="false" 
 		    enableSelectByExample="false" 
 		    enableUpdateByExample="false" 
