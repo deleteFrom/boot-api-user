@@ -56,4 +56,5 @@
 			</plugin>
 		</plugins>
   </build>
+  <groupId>com.boot</groupId>
 </project>
